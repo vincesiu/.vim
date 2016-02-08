@@ -1,5 +1,12 @@
+" Setting leader to space
+map <SPACE> <leader>
+
 " This maps the escape to jkl from insert mode, so you don't have to ESC
 inoremap jk <ESC>
+
+" This adds easy insertion of empty new lines without entering insert mode
+nnoremap <Leader>o o<Esc>k
+nnoremap <Leader>O O<Esc>j
 
 " size of a hard tabstop
 set tabstop=2

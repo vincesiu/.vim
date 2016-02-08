@@ -2,12 +2,20 @@
 
 #Perhaps I should make a check for .vimrc presence already, and throw out a message?
 
-FILE="~/.vimrc"
+FILE=~/.vimrc
 FILEPATH=`pwd`
 FILEPATH="$FILEPATH/.vimrc"
-if [ -f $FILE ];
+if [ -e $FILE ]
 then
-  echo ".vimrc already present, delete first"
+  read -r -p "~/.vimrc already exists, want to replace it? [y/n] " response
+  response=${response,,} #tolower
+  if [[ $response =~ ^(y)$ ]]
+  then
+    rm $FILE
+    ln -s $FILEPATH ~/.vimrc
+  else
+    echo "that's chill bro np"
+  fi
 else
   ln -s $FILEPATH ~/.vimrc
 fi
