@@ -8,10 +8,11 @@
 #
 #======================================
 
-#TODO: setup the makefile install
 #TODO: make a backup if I overwrite a file
 #TODO: setup the makefile uninstall (with backup restoration support)
 #TODO: bashprofile to auto update my config file on login?
+#TODO: add `set textwidth=72` for my git vim?
+#TODO: set auto editor for git as vim?
 
 #-------------------------------------
 # Soft linking my config files
