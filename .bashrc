@@ -16,3 +16,4 @@ alias v='vim'
 
 #Utility
 alias ls='ls --color=auto'
+export PS1="\T \u@\H \w \$? > \[$(tput sgr0)\]"
