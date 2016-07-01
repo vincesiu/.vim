@@ -4,7 +4,7 @@
 
 
 #So I don't overwrite files
-alias rm='rm -i'
+alias rm='rm -id'
 alias mv='mv -i'
 alias cp='cp -i'
 
@@ -37,3 +37,11 @@ export HISTCONTROL=ignoredups
 #export PS1="\T \u@\H \w \$? > \[$(tput sgr0)\]"
 #Color:
 export PS1="\t \u@\h \[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] \$? > \[$(tput sgr0)\]"
+
+
+#-------------------------------
+# EDITOR SETTINGS
+#-------------------------------
+#export GIT_EDITOR=vim
+export VISUAL=vim
+exportEDITOR="$VISUAL"

@@ -38,6 +38,9 @@ inoremap <Up> <C-o>gk
 " Adding c-W as my save since I am not quick enough to lift my finger off
 cnoremap W w
 
+" Sets textwidth to auto 72
+au FileType gitcommit set tw=72
+
 " cool things:
 " daw//delete word uncer cursor
 " ?<word>//search backwards
