@@ -42,6 +42,4 @@ export PS1="\t \u@\h \[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[
 #-------------------------------
 # EDITOR SETTINGS
 #-------------------------------
-#export GIT_EDITOR=vim
-export VISUAL=vim
-exportEDITOR="$VISUAL"
+export GIT_EDITOR=vim
