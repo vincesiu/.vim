@@ -41,6 +41,9 @@ cnoremap W w
 " Sets textwidth to auto 72
 au FileType gitcommit set tw=72
 
+" Sets incremental search and highlight
+:se is
+
 " cool things:
 " daw//delete word uncer cursor
 " ?<word>//search backwards
