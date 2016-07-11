@@ -44,6 +44,8 @@ au FileType gitcommit set tw=72
 " Sets incremental search and highlight
 :se is
 
+set showcmd
+
 " cool things:
 " daw//delete word uncer cursor
 " ?<word>//search backwards
