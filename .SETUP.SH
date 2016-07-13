@@ -20,7 +20,7 @@
 
 # Used so I can keep all actual files in here and updated with my github
 
-FILES='.vimrc .bashrc .bash_profile'
+FILES='.vimrc .bashrc .bash_profile .gitconfig'
 
 echo "Soft linking config files..."
 

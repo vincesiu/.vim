@@ -15,7 +15,7 @@ alias j='jobs -l'
 alias v='vim'
 
 #Utility
-alias ls='ls --color=auto'
+alias ls='ls --color=auto -CF'
 
 
 #-------------------------------
