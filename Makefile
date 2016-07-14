@@ -5,6 +5,6 @@ install:
 	@ ./.SETUP.SH
 
 uninstall:
-	@ echo unimplemented
+	@ ./.UNINSTALL.SH
 
 .PHONY: install uninstall
