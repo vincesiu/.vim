@@ -2,7 +2,7 @@
 #vince.siu4 (at) gmail (dot) com
 
 install:
-	@ ./.SETUP.SH
+	@ ./.INSTALL.SH
 
 uninstall:
 	@ ./.UNINSTALL.SH

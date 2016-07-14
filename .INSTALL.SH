@@ -4,12 +4,10 @@
 
 #======================================
 #
-# The main setup for my config files
+# The main installer for my config files
 #
 #======================================
 
-#TODO: make a backup if I overwrite a file
-#TODO: setup the makefile uninstall (with backup restoration support)
 #TODO: bashprofile to auto update my config file on login?
 
 #-------------------------------------
@@ -20,7 +18,7 @@
 
 FILES='.vimrc .bashrc .bash_profile .gitconfig'
 
-echo "Soft linking config files..."
+echo "Installing my configuration files..."
 
 for FILE in $FILES; do
   FILEPATH="$(pwd)/$FILE"
