@@ -16,12 +16,14 @@ echo "Uninstalling my config files..."
 for FILE in $FILES; do
   FILE=~/${FILE}
   FILEBACKUP=${FILE}.bak
-  if [[ -e $FILEBACKUP ]]; then
-    echo "Restoring original ${FILE}..."
-    mv $FILEBACKUP $FILE
-  else
-    echo "Removing ${FILE}..."
-    rm $FILE
+  if [[ -e $FILE ]]; then
+    if [[ -e $FILEBACKUP ]]; then
+      echo "Restoring original ${FILE}..."
+      mv $FILEBACKUP $FILE
+    else
+      echo "Removing ${FILE}..."
+      rm $FILE
+    fi
   fi
 done
 
