@@ -23,15 +23,14 @@ echo "Installing my configuration files..."
 for FILE in $FILES; do
   FILEPATH="$(pwd)/$FILE"
   FILE=~/$FILE
-  echo $FILEPATH
-  echo $FILE
+  echo "Soft linking ${FILEPATH} to ${FILE}"
   if [[ -e $FILE ]]; then
     read -r -p "$FILE already exists, do you want to replace it? [y/n] " response
     response=${response,,} # "," makes the first char lowercase, ",," makes all chars lowercase
     if [[ $response =~ ^y$ ]]; then # =~ is a regex match
       FILEBACKUP=${FILE}.bak
       if [[ -e $FILEBACKUP ]]; then
-        echo "${FILEBACKUP} already exists, can't overwrite"
+        echo "${FILEBACKUP} already exists, will not overwrite this backup"
         continue 
       fi
       mv $FILE $FILEBACKUP
@@ -39,9 +38,8 @@ for FILE in $FILES; do
       continue   
     fi 
   fi
-  echo "Linking $FILE"
   ln -s $FILEPATH $FILE
 done
 
-echo "Finished"
+echo "Finished linking config files"
 

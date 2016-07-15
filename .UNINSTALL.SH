@@ -19,6 +19,9 @@ for FILE in $FILES; do
   if [[ -e $FILEBACKUP ]]; then
     echo "Restoring original ${FILE}..."
     mv $FILEBACKUP $FILE
+  else
+    echo "Removing ${FILE}..."
+    rm $FILE
   fi
 done
 
