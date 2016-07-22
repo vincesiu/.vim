@@ -28,6 +28,10 @@ export HISTCONTROL=ignoredups
 #export HISTCONTROL=ignoreboth
 #The above is shorthand for ignorespaces and ignoredups
 
+HISTSIZE=1000      #Maintains history for current session
+HISTFILESIZE=2000  #Maintains history for previous sessions
+
+
 
 #-------------------------------
 # COMMAND PROMPT
