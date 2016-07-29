@@ -11,7 +11,7 @@
 #TODO: bashprofile to auto update my config file on login?
 
 #-------------------------------------
-# Soft linking my config files
+# soft linking my config files
 #-------------------------------------
 
 # Used so I can keep all actual files in here and updated with my github
@@ -43,3 +43,8 @@ done
 
 echo "Finished linking config files"
 
+#-------------------------------------
+# Soft linking my hooks
+#-------------------------------------
+
+ln -s ./.git/hooks/post-commit ./git-commit-hook.sh
