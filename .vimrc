@@ -1,7 +1,9 @@
+"USEFUL COMMANDS I MIGHT FORGET
+" :noh turns off highlighting
 " Setting leader to space
-map <SPACE> <leader>
+ map <SPACE> <leader>
 
-" This maps the escape to jkl from insert mode, so you don't have to ESC
+" This maps the escape to jkl from insert mode, so you dont have to ESC
 inoremap jk <ESC>
 
 " This adds easy insertion of empty new lines without entering insert mode
@@ -14,7 +16,7 @@ set tabstop=2
 " always uses spaces instead of tab characters
 set expandtab
 
-" size of an "indent"
+" size of an indent
 set shiftwidth=2
 
 " setting line number
@@ -34,7 +36,6 @@ nore ; :
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
-
 " Adding c-W as my save since I am not quick enough to lift my finger off
 cnoremap W w
 
@@ -42,8 +43,13 @@ cnoremap W w
 au FileType gitcommit set tw=72
 
 " Sets incremental search and highlight
-:se is
+set incsearch
+set hlsearch
 
+"Set syntax highlighting on
+syntax on
+
+"Show command you are typing in bottom right
 set showcmd
 
 " cool things:
