@@ -41,13 +41,10 @@ for FILE in $FILES; do
   ln -s $FILEPATH $FILE
 done
 
+
+#-------------------------------------
+# Sourcing rc files
+#-------------------------------------
+source ~/.bashrc
+
 echo "Finished linking config files"
-
-#-------------------------------------
-# Soft linking my hooks
-#-------------------------------------
-
-git fetch origin arch
-ln -s ./git-commit-hook.sh ./.git/hooks/post-commit
-
-
