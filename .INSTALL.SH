@@ -47,4 +47,7 @@ echo "Finished linking config files"
 # Soft linking my hooks
 #-------------------------------------
 
-ln -s ./.git/hooks/post-commit ./git-commit-hook.sh
+git fetch origin arch
+ln -s ./git-commit-hook.sh ./.git/hooks/post-commit
+
+
