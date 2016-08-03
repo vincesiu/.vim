@@ -44,8 +44,25 @@ HISTFILESIZE=2000  #Maintains history for previous sessions
 export PS1="\n\t \u@\h \[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\033[38;5;15m\] \$?\[$(tput setaf 2)\]\$(__git_ps1)\[$(tput sgr0)\] \n > "
 
 
+
+
 #-------------------------------
 # UTILITY SETTINGS
 #-------------------------------
 export GIT_EDITOR=vim
 export IGNOREEOF=3
+
+
+#-------------------------------
+# Optional Functions
+#-------------------------------
+
+#Sourcing git prompt, found using #find / -name git-prompt.sh
+
+source_git_prompt() {
+  source /usr/share/git/git-prompt.sh;
+}
+
+
+
+#source_git_prompt
