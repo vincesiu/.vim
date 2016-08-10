@@ -19,3 +19,13 @@
 #############################
 [push]
   default = simple #Only push the current branch to remote
+
+
+#Aliases
+#############################
+[alias]
+  ch = checkout
+  co = commit
+  di = diff
+  fe = fetch
+  st = status
