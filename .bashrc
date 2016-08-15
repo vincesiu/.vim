@@ -15,7 +15,8 @@ alias j='jobs -l'
 alias v='vim'
 
 #Utility
-alias ls='ls --color=auto -CF --group-directories-first'
+alias ls='ls --color=auto'
+alias la='ls --color=auto -CF --group-directories-first'
 alias ll='ls --color=auto -alF --group-directories-first'
 
 
