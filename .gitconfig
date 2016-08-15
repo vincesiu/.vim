@@ -24,8 +24,7 @@
 #Aliases
 #############################
 [alias]
-  ch = checkout
-  co = commit
-  di = diff
-  fe = fetch
+  go = checkout
+  d = diff
   st = status
+  stat = status
