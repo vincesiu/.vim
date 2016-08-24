@@ -60,6 +60,7 @@ set showcmd
 " =}//indent until closing flower brace
 " vert diffs <file>//compare diff
 " %!xxd//hexediting coooool
+" > or >> will indent things by one tab
 "
 "   
 "
