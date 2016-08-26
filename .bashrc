@@ -66,4 +66,4 @@ source_git_prompt() {
 
 
 
-#source_git_prompt
+source_git_prompt
