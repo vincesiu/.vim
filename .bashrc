@@ -15,9 +15,9 @@ alias j='jobs -l'
 alias v='vim'
 
 #Utility
-alias ls='ls --color=auto'
-alias la='ls --color=auto -CF --group-directories-first'
-alias ll='ls --color=auto -alF --group-directories-first'
+alias ls='ls --color=auto -C --group-directories-first'
+alias la='ls --color=auto -alF --group-directories-first'
+alias ll='ls --color=auto -lF --group-directories-first'
 
 
 #-------------------------------
@@ -50,8 +50,10 @@ export PS1="\n\t \u@\h \[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]\[\03
 #-------------------------------
 # UTILITY SETTINGS
 #-------------------------------
+export VISUAL=vim
+export EDITOR=vim
 export GIT_EDITOR=vim
-export IGNOREEOF=3
+export IGNOREEOF=3 #Takes three iterations of ctrl-D to exit terminal
 
 
 #-------------------------------
@@ -66,4 +68,4 @@ source_git_prompt() {
 
 
 
-source_git_prompt
+#source_git_prompt
