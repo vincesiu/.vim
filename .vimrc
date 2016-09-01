@@ -10,14 +10,9 @@ inoremap jk <ESC>
 nnoremap <Leader>o o<Esc>k
 nnoremap <Leader>O O<Esc>j
 
-" size of a hard tabstop
-set tabstop=2
-
-" always uses spaces instead of tab characters
-set expandtab
-
-" size of an indent
-set shiftwidth=2
+set tabstop=4 " size of an actual tab
+set expandtab " always uses spaces instead of tab characters
+set shiftwidth=4 " size of an indent using >> and <<
 
 " setting line number
 set nu
@@ -52,6 +47,14 @@ syntax on
 "Show command you are typing in bottom right
 set showcmd
 
+"Faster switching between windows
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+set ignorecase "Case insensitive searching hooray!
+
 " cool things:
 " daw//delete word uncer cursor
 " ?<word>//search backwards
@@ -60,7 +63,7 @@ set showcmd
 " =}//indent until closing flower brace
 " vert diffs <file>//compare diff
 " %!xxd//hexediting coooool
-" > or >> will indent things by one tab
+" > or >> will indent things by one tab, use == to make them equal
 "
 "   
 "
