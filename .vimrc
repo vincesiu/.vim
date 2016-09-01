@@ -64,12 +64,14 @@ set ignorecase "Case insensitive searching hooray!
 " vert diffs <file>//compare diff
 " %!xxd//hexediting coooool
 " > or >> will indent things by one tab, use == to make them equal
-"
-"   
+" <C-w><C-w> ooooh in insert mode, c-w deletes last word, this is useful
+"           for those times when i mess up and press enter and autoindent 
 "
 "   I use the following to keep all the temporary and backup files in one
 "   place:
 "   set backup
 "   set backupdir=~/.vim/backup
 "   set directory=~/.vim/tmp
+"
+"
 "    
