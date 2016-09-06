@@ -19,6 +19,8 @@ alias ls='ls --color=auto -C --group-directories-first'
 alias la='ls --color=auto -alF --group-directories-first'
 alias ll='ls --color=auto -lF --group-directories-first'
 
+alias powerup='chmod u+x'
+
 
 #-------------------------------
 # HISTORY
