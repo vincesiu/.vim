@@ -7,6 +7,6 @@
 # which containts most of my options
 
 if [ -f ~/.bashrc ] ; then
-  source ~/.bashrc
+    source ~/.bashrc
 fi
 

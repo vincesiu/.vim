@@ -9,22 +9,22 @@
 #=====================================
 
 
-FILES='.vimrc .bashrc .bash_profile .gitconfig'
+FILES='.vimrc .bashrc .bash_profile .gitconfig .zshrc'
 
 echo "Uninstalling my config files..."
 
 for FILE in $FILES; do
-  FILE=~/${FILE}
-  FILEBACKUP=${FILE}.bak
-  if [[ -e $FILE ]]; then
-    if [[ -e $FILEBACKUP ]]; then
-      echo "Restoring original ${FILE}..."
-      mv $FILEBACKUP $FILE
-    else
-      echo "Removing ${FILE}..."
-      rm $FILE
+    FILE=~/${FILE}
+    FILEBACKUP=${FILE}.bak
+    if [[ -e $FILE ]]; then
+        if [[ -e $FILEBACKUP ]]; then
+            echo "Restoring original ${FILE}..."
+            mv $FILEBACKUP $FILE
+        else
+            echo "Removing ${FILE}..."
+            rm $FILE
+        fi
     fi
-  fi
 done
 
 echo "Uninstall completed"

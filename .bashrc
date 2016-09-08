@@ -65,9 +65,11 @@ export IGNOREEOF=3 #Takes three iterations of ctrl-D to exit terminal
 #Sourcing git prompt, found using #find / -name git-prompt.sh
 
 source_git_prompt() {
-  source /usr/share/git/git-prompt.sh;
+    source /usr/share/git/git-prompt.sh;
 }
 
 
 
 #source_git_prompt
+source_git_prompt
+PATH=$PATH:~/.gem/ruby/2.3.0/bin

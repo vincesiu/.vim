@@ -1,30 +1,34 @@
 [user]
-  email = vince.siu4@gmail.com
+    email = vince.siu4@gmail.com
 	name = Vincent Siu
 [core]
-  editor = vim
+    editor = vim
 [color]
-  branch = auto
-  diff = auto
-  interactive = auto
-  pager = true
-  status = auto
-  ui = true
+    branch = auto
+    diff = auto
+    interactive = auto
+    pager = true
+    status = auto
+    ui = true
 [color "status"]
-  added = green
-  changed = yellow
-  untracked = red
+    added = green
+    changed = yellow
+    untracked = red
+#[color "diff"]
+#    old = red strike
+#    new = green italic
+
 
 #Important options
 #############################
 [push]
-  default = simple #Only push the current branch to remote
+    default = simple #Only push the current branch to remote
 
 
 #Aliases
 #############################
 [alias]
-  go = checkout
-  d = diff
-  st = status
-  stat = status
+    go = checkout
+    d = diff
+    st = status
+    stat = status
