@@ -16,7 +16,7 @@
 
 # Used so I can keep all actual files in here and updated with my github
 
-FILES='.vimrc .bashrc .bash_profile .gitconfig .zshrc'
+FILES='.vimrc .bashrc .bash_profile .gitconfig .zshrc .aliases'
 
 echo "Installing my configuration files..."
 
