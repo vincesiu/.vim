@@ -25,7 +25,12 @@ set cindent
 set cul
 
 " remapping : to ;, save that pinky life!
-nore ; :
+" Note: 20161005 temporarily removing this, lets see if I can use this
+" for f action
+" nore ; :
+
+" sets relativenumber
+set relativenumber
 
 " Make cursor move as expected with wrapped lines:
 inoremap <Down> <C-o>gj
